@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:10px ;
+            margin:10px ;
+            /* due to box sizing --> size of box remain same even after adding padding and margin
+            content shrink ho jaega  */
+            box-sizing: border-box; 
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 2px solid brown;
+            display: inline-block;
+            /* padding: 20px; */
+            /* margin: 30px; */
+
+
+
+        }
+
+
+        /* block elements come in new line and takes complete space from left to right */
+        /* div{
+            border: 1px solid red;
+            width: 200px;  you can give width of your choice 
+        } */
+         span{
+            border: 2px dotted green;
+
+            padding: 100px;
+            margin: 100px;
+         }
+    </style>
+</head>
+<body>
+    <!-- this is inline block of display properties -->
+    <div class="box" >welcome to coding blocks</div>
+    <div>welcome to gtb college</div>
+    <span>this is bhavesh gautam</span>
+    <span>he is tanish gandhi</span>
+    <!--box sizing (content size shrink ho jaega and border size remain same) -->
+
+</body>
+</html>
