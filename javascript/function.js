@@ -21,11 +21,12 @@ function getsSum(a,b,c){
  let ans =multiply(2,3)
  console.log(abc);
 
- // arrow functions
- let b=multiply(a,b)=> {
-    return a*b
+// arrow functions
+ //let b=  functionmultiply(a,b)  {
+   // return a*b
 
- }
+ //}
  let answer1=multiply(2,3)
- console.log(answer1);
+ console.log(answer1)
 
+w
