@@ -14,82 +14,119 @@
             justify-content: space-between;
         }
         #logo{
-            /* display: inline; */
-
-
+            margin: 0px;
+            position: relative;
+            bottom: 30px;
+        }
+        .image{
+            padding: 5px;
+            margin-top: 10px;
+            width: 50%;
+            height: 20vh;
         }
         #button{
-            margin-top: 2px;
-            padding: 5px;
-            border: 2px solid black;
-            text-align: center;
-            border-radius: 30px;
-            height: 20px;
-            width: fit-content;
-
-        }
+            
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14.5px;
+    border: 2px solid black;
+    border-radius: 9999px;
+    padding-top: 5px;
+    margin-top: 13px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
         .start{
-            /* display: flex;  no use */
+            margin-top: 12%;
+             /* display: block; */
             text-align: center;
             font-size: larger;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, Helvetica, sans-serif; 
         }
         #get{
-            margin-top: 2px;
+            margin-top: 4px;
             padding: 5px;
             margin: auto;
-            border: 2px solid black;
-            background-color:#71a5ef;
+            color: aliceblue;
+            border: 2px solid white;
+            background-color:blue;
             text-align: center;
-            border-radius: 12px;
-            height: 20px;
-            width: fit-content;
-            /* display: flex;
-            justify-content: center; */
+            border-radius: 15px;
+            height: 24px;
+            width: 200px;
         }
-        .box{
-            display: flex;
-            justify-content: space-around;
-            height: 100px;
-            width: fit-content;
-            margin-bottom: 500px;
+    
+       #head4 {
+    display: block;
+    text-align: center;
 
-        }
-        #box1{
-            /* align-content: right; */
-            padding: 30px;
-            margin: 35px;
-            /* background-position: right;  no use */
-            height: 100px;
-            /* width: 50px; it makes over lapping with image */
-            /* width: fit-content; */
-        }
-        #box2{
-            padding: 30px;
-            margin: 20px;
-            height: 100px;
-            /* width: fit-content; */
-        }
-        .box-container {
+       }
+ .sec1 {
+    height: 440px; 
+    width: 1200px; ;
+    display: flex;
+     justify-content: center;  /*it will bring the complete image and  complete left text part in center*/
+    flex-direction: row;
+    gap: 130px;
+    }
+
+#sec1-img {
+    background-image: url(./cuate.png);
+    background-size: contain;
+    height: 270px;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.subsec1 {
+    display: flex;
+    height: 200px;
+    width: 450px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+}
+#p1 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 25px;
+    text-align: left;
+}
+#b3 {
+    height: 40px;
+    width: 80px;
+    text-align: center;
+    margin: 12px 0px;
+    padding: 8px 40px;
+    color: white;
+    background-color: #2563Eb;
+    border-radius: 9999px;
+    cursor: pointer;
+}
+
+.box-container {
             display: flex;
             /* flex-direction: row; */
             justify-content: space-between;
             gap: 10px;
             padding: 20px;
-            margin-top: 16%;
-            margin-bottom:7%;
+            margin-top: 3%;
+            margin-bottom:90px;
             flex-wrap: wrap;
         }
         
         /* Style for individual boxes */
-        .grid {
+ .grid {
             width: 23%;
             padding: 20px;
             background-color: white;
             border: 1px solid #ccc;
             box-sizing: border-box;
             text-align: center;
-        }
+ }
 
         /* Optional: Add some styling to the text */
         /* .box h3 {
@@ -98,7 +135,7 @@
         }
          */
         
-        .overlap{
+ .overlap{
             position: relative;
             bottom: 700px ;
             left: 10px;
@@ -107,41 +144,47 @@
             width: max-content;
           
             
-        }
-        .boxA{
+}
+.boxA{
             height:70px ;
-            width: 800pxpx ;
-        }
-        #one{
+            width: 500pxpx ;   }
+#one{
             border: 1px solid black;
             background-color: white;
             display: flex;
             margin-top: 14px;
             position: relative;
             /* width: max-content;  */
-        }
-        #two{
+ }
+  #two{
             border: 1px solid black;
+         
             background-color: white;
             display: flex;
             margin-top: 14px;
             /* width: max-content;  */
-        }
-        #three{
+}
+#three{
             border: 1px solid black;
             background-color: white;
             display: flex;
             margin-top: 14px;   /* to maintain gap between boxex  */
             /* width: max-content;  */
-        }
-        #four{
+ }
+#four{
             border: 1px solid black;
             background-color: white;
             display: flex;
             margin-top: 14px;
             /* width: max-content   */
-        }
-        .div1{
+}
+.path{
+    display:flex;
+    flex-direction: row ;
+}
+
+
+.div1{
             margin: 50px;
             margin-bottom: 30px;
           display: flex;
@@ -172,44 +215,54 @@
             margin-bottom: 40px;
         }
         
+        
 
 
     </style>
 </head>
 <body>
+    <!--.........................................................section 1................................................................ -->
+<div >
     <div class="header">
     <div id="logo">
-        <img src="data:image/jpeg;base64,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" alt="Osumare">
+        <img class="image" src="data:image/jpeg;base64,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" alt="Osumare">
     </div >
     <div  id="button">ContactUs</div> 
     </div>
-<div class="start">
-    <h1><pre>Elevate <span style="color: blue;">Real Estate Success</span> with <br>Osumare's Digital Expertise</pre></h1>
-    <p style="font-size: small;">Tailored Solutions for Thriving in the Digital Real Estate Landscape</p><br>
-    <div id="get">Get Started</div> 
-    </br>
-    </br>
-    <div> 
-        <img  src="https://qsumare.netlify.app/public/Header%20image.png" alt="We Need Marketing" width="550px"> </div>
-</div>
 </div>
 
- <br>
- <br>
- <br> 
-<div>
-    <h2 style="text-align: center;">Real Estate - Focused Digital Mastery</h2>
-    <div class="box">
-    <div id="box1">
-        <img src="https://qsumare.netlify.app/public/cuate.png" alt="REFDM" width="400">
+<!-- ............................................................... section2..................................................... -->
+<div class="start">
+    <div><h1>Elevate <span style="color: blue;">Real Estate Success</span> with</h1></div>
+    <div style="font-size: 35px; font-weight: bold; margin-bottom: 8px;"> Osumare's Digital Expertise </div>
+    <div ><p style="margin-top: 5px; margin-bottom: 19px;">Tailored Solutions for Thriving in the Digital Real Estate Landscape</p></div>
+    <div id="get" style="margin-bottom: 70px;">Get Started</div>
+    <div> 
+        <img  src="https://qsumare.netlify.app/public/Header%20image.png" alt="We Need Marketing" width="550px ; margin-bottom:10px;"> 
     </div>
-    <div id="box2"> 
-        <h2>Unlock the Potential of Digital Real <br>Estate Excellence</h2> 
-        <p>At Osumare, we understand that the real estate landscape demands a digital presence that aligns with the intricacies of property marketing. Our range of specialized services is meticulously designed to catapult your brand's success in the ever-evolving digital property market</p><br>
-        <br><br><div id="get">Get Started</div> <br>
+</div>
+
+<!-- ..............................................................section3 ........................................................ -->
+<div style="margin-bottom: 10%; margin-top: 5%;">
+    <h2 id="head4">Real Estate-Focused Digital Mastery</h2>
+    <div class="sec1">
+        
+        <div id="sec1-img">
+            <img src="https://qsumare.netlify.app/public/cuate.png" alt="">
+        </div>
+        <div class="subsec1">
+        <div><h2>Unlock the Potential of Digital Real Estate Excellence</h2></div>
+        <div><p id="p1">At Osumare, we understand that the real estate landscape demands a digital presence that aligns with the intricacies of property marketing. Our range of specialized services is meticulously designed to catapult your brand's success in the ever-evolving digital property market.</p></div>
+        <div id="b3">Get Started</div>
+      </div>
+      </div>
+</div>
+<!-- ......................................section4 .........................................-->
+<div style="background-color:whitesmoke; height: 640px;">
+    <div>
+        <h1 style="text-align: center; font-weight:bold;">Our Service Offerings</h1>
+        <p style="text-align: center; margin-top: 10px;">Strategies that Drive Property Market Excellence</p>
     </div>
-    </div>
-<div style="background-color: blue">
 <div class="box-container">
     <div class="grid">
         <img src="https://qsumare.netlify.app/public/Group%20117.png">
@@ -251,58 +304,57 @@
         <h3>Video marketing</h3>
         <p> From initial awareness to post-purchase loyalty, we offer full-funnel solutions that guide customers through every step of their journey.</p>
     </div>
-    </br>
-    </br>
-    <div id="get">Get Started</div> 
+    <div id="get"  style="margin-top: 3%;">Get Started</div> 
 </div>
 </div>
-<div>
+<!----------------------------------------------------------- section5------------------------------------------------------------------ -->
+<div style="margin-top: 4%; margin-bottom: 5%;">
     <h1 style="text-align: center;">Navigating Real Estate's Digital Landscape</h1>
-</br>
     <p style="text-align: center;">Insights for Real Estate Marketing Advantage</p>
-</br>
 </div>
-</br>
-</br>
 <div style="text-align: right;" > <!--  it is used to shift the image left right center-->
     <img src="https://qsumare.netlify.app/public/Frame%20892.png" alt="We are Expert">
 </div>
 <div class="overlap">
     <div  class="boxA" id="one">   
         <img class="imag1" src="https://qsumare.netlify.app/public/Group%20116.png" alt="">
-        <h1>Market Trends Analysis</h1>
-        <p class="p">Predictive insights to guide real estate strategies.</p>
+        <h1  style="margin-top: 16px;">Market Trends Analysis</h1>
+        <p >Predictive insights to guide real estate strategies.</p>
     </div>
     <div class="boxA" id="two">   
         <img src="https://qsumare.netlify.app/public/Group%20116%20(1).png" alt="">
-        <h1>Targeted Buyer Persona </h1>
-         <p class="p"> Understand and connect with your ideal property buyers.</p>
+        <h1 style="margin-top: 16px;">Targeted Buyer Persona </h1>
+        <p > Understand and connect with your ideal property buyers.</p>
     </div>
     <div class="boxA" id="three">   
         <img src="https://qsumare.netlify.app/public/Group%20116%20(2).png" alt="">
-        <h1>Competitor Insights</h1>
-        <p class="p">Stand out in the property market with informed strategies.</p>
+        <h1 style="margin-top: 16px;" >Competitor Insights</h1>
+        <p>Stand out in the property market with informed strategies.</p>
     </div>
     <div class="boxA" id="four">   
         <img src="https://qsumare.netlify.app/public/phone-find-fill.png" alt="">
-        <h1>Visual Content Appeal</h1>
-        <p class="p">Captivate buyers with appealing visuals and immersive experiences.</p>
+        <h1 style="margin-top: 16px;">Visual Content Appeal</h1>
+        <p>Captivate buyers with appealing visuals and immersive experiences.</p>
     </div>
 </div>
+<!-- ---------------------------------------------------------section6--------------------------------------------------------------- -->
 <div>
+    <div style="margin-bottom: 4%; ">
+      <h2 style="text-align: center; font-weight:900;">Driving Property Inquiries to Conversions</h2>
+       <p style="text-align: center; font-size: 500; margin-top: 1%;" >Streamlined Strategies for Real Estate Success</p>
+    </div> 
+<div class="path"> 
     <div>
-      <h2 style="text-align: center;">Driving Property Inquiries to Conversions</h2><br>
-       <p style="text-align: center; font-size: medium;">Streamlined Strategies for Real Estate Success</p>
-    <div class="box">
-    <div  id="box1">
-        <img  style="text-align: center; margin-bottom:200px ;margin-left: 15%;"   src="https://qsumare.netlify.app/public/bro.png" alt="">
+        <img  style="text-align: center; margin-bottom:200px ;margin-left: 15%;"src="https://qsumare.netlify.app/public/bro.png" alt="">
     </div>
-    <div   id="box2">
+    <div >
         <h2>Optimized Path to Property Purchase</h2> <br><br>
         <p>In the dynamic realm of real estate, the journey from a property inquiry to a successful conversion demands a well-crafted approach. At Osumare, we specialize in guiding potential buyers through this journey seamlessly, maximizing inquiries-turned-conversions with expert strategies.</p>
         <br><br><div id="get">Get Started</div> <br>
     </div>
 </div>
+</div>
+<!-- ---------------------------------------------------------------section7----------------------------------------------------------- -->
 <div>
     <h2 style="text-align: center;">Driving Property Inquiries to Conversions</h2></div>
 <div class="div1">
@@ -330,7 +382,7 @@
     </div>
 </div>
 </br>
-</br>
+<!-- -----------------------------------------------------------section8 --------------------------------------------------------------->
 <h2  style="text-align: center; font-size: x-large;">Our Expertise in Action</h2>
 <div class="div3">
     <div style="text-align: center;">
@@ -344,7 +396,7 @@
         <p>Explore a case study where our landing page optimization increased property lead conversion rates by 30%</p>
     </div>
  </div>   
- <div class="div4">
+ <div class="div4" style="margin-bottom: 10px;">
     <div style="text-align: center;">
         <img src="https://qsumare.netlify.app/public/icon%20(6).png" alt="">
         <h1>Trust Building with Social Proof</h1>
@@ -358,10 +410,12 @@
 </div>
 <br>
 <br>
+<!-- --------------------------------------------------------section9------------------------------------------------------------- -->
+<div style="display: flex; flex-direction: row; justify-content: space-evenly; position: relative;">
+    <div style="height: 50vh; width: 30%; border: 2px solid; background-color: #82beff73; position: absolute; z-index: 2; filter: blur(80px); opacity: 3;border-radius: 40%; "></div>
 <div style="text-align: center;">
-    <h1>Your Peace of Mind</h1>
+    <h1 style="text-align: center;">Your Peace of Mind</h1>
     <p>Through our conversion-focused strategies, we ensure that property </br> seekers are not just visitors, but engaged prospects ready to make </br>their next move in the real estate market</p>
-    <br>
     <button style="  margin-top: 2px;
     padding: 5px;
     margin: auto;
@@ -372,74 +426,150 @@
     height: 23px;
     width: fit-content;" >Get Started</button>
 </div>
-</br>
-</br>
+    <div style="height: 50vh; width: 30%; border: 2px solid; background-color: rgba(255, 223, 228, 0.651); position: relative; z-index: 2; filter: blur(80px); opacity: 3;border-radius: 40%; "></div>
+</div>
+</div>
+<!-- --------------------------------------------------------section10 -------------------------------------------------------------------->
+<div>
 <h1 style="text-align: center; font-weight: bold;">What Our Pharma Partners Say</h1>
 <p style="text-align: center; font-size: small;">Driving Transformations, One Brand at a Time</p>
 <div style="display: flex;  margin: top -10px; margin-bottom :15%; margin: 16% ; height: 500px; width: 900px; background-color: white; border: 1px solid black;">
     <div style="margin: 15px;"> <img src="https://qsumare.netlify.app/public/Video.png" alt=""></div>
-    <div style="display: flex; margin-top: 100px;">
+    <div style="display: flex;">
         <div> <img src="https://qsumare.netlify.app/public/Avatar%20of%20team.png" alt=""></div>
         <div style="font-style: bold;"> Tabish Khan</div>
         <div> <img src="https://qsumare.netlify.app/public/Symbol.png" alt=""></div>
     </div>
-    <div>
-       <p>Osumare's expertise in pharma marketing is unparalleled. Their strategies helped us navigate complex regulations while driving remarkable growth.</p>
+    <div style="height: 30vh;width: 400%; margin-top: 2vh;">
+        <p style="line-height: 1.4;">Osumare's expertise in pharma</p>
+        <p style="line-height: 1.4;">marketing is unparalleled. Their</p>
+        <p style="line-height: 1.4;">strategies helped us navigate</p>
+        <p style="line-height: 1.4;">complex regulations while driving</p>
+        <p style="line-height: 1.4;">remarkable growth.</p>
     </div>
 </div>
 <div style="display: flex; justify-content: center; gap: 8px; margin-bottom:46%;" >
     <div><img src="https://qsumare.netlify.app/public/scroll%20buttion%20(1).png" alt=""></div>
     <div><img src="https://qsumare.netlify.app/public/scroll%20buttion.png" alt=""></div>
 </div>
+</div>
 <div>
     <h1 style="text-align: center;">Frequently Asked Questions</h1>
     <p style="text-align: center;">Pinpoint your audience with precision, ensuring your marketing efforts reach those most likely to engage with your brand.</p>
 </div>
-<div class="Frequently">
-    <div style="border: 1px solid black ;   height:70px ;  width: 450px ;">
+<div class="Frequently" style="display: flex;flex-direction: column; justify-content: space-around;">
+    <div style="border: 1px solid black ;  padding: 10px;  height:70px ;  width: 600px ;">
         <p style="font-weight: bold; padding: 15px;">3. How does Osumare measure campaign success?</p>
     </div>
-    <div  style="border: 1px solid black;   height:70px ;width: 450px ;">   
+    <div  style="border: 1px solid black;  padding: 10px;  height:70px ;width: 600px ;">   
         <p style="font-weight: bold; padding: 15px;"> 3. How does Osumare measure campaign success?</p>
     </div>
-    <div  style="border: 1px solid black;   height:70px ; width: 450px; background-color: blue;">   
+    <div  style="border: 1px solid black;  padding: 10px;  height:70px ; width: 600px; background-color: blue; color: white; box-shadow: 0.1px 10px 13px lightblue;">   
        <p style="font-weight: bold; padding: 15px;">3.How does Osumare measure campaign success?</p>
     </div>
     <div>   
-        <p style="border: 1px solid black; padding: 10px;  height:100px ; width: 450px ;">We believe in measurable results. Our data-driven approach means that every campaign's performance is tracked, analyzed, and refined for optimal outcomes. We provide regular reports that detail key metrics, giving you clear insights into how our strategies are driving growth for your brand.</p>
+        <p style="border: 1px solid black; padding: 10px;  height:100px ; width: 600px ;text-align: center;">We believe in measurable results. Our data-driven approach means that every campaign's performance is tracked, analyzed, and refined for optimal outcomes. We provide regular reports that detail key metrics, giving you clear insights into how our strategies are driving growth for your brand.</p>
     </div>
 </div>  
- <div style="margin-bottom:60px ;">
-        <h1 style="text-align: center;">Connect with Our Digital Marketing Experts</h1>
-        <p style="text-align: center;">Reach Out for Tailored Strategies and Results-Driven Solutions. Let's Elevate Your Online Presence Together</p>
+<div>
+    <h2 style="text-align: center; margin-top: 77px; line-height: 2.8;">Connect with Our Digital Marketing Experts</h2>
+</div>
+<div style="text-align: center;">
+    <p>Reach Out for Tailored Strategies and Results-Driven Solutions. Let's Elevate Your Online Presence Together</p>
+</div>
+<div style="border: solid black; width: 50%; height: 350px; box-shadow: -5px 5px 10px rgba(0,0,0,0.3),5px 5px 10px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.3); border-radius: 10px; position: relative; left: 25%;">
+    <div style="display: flex; flex-direction: row;justify-content: center;">
+        <div>
+        <form >
+            <table style="border-color: #2563Eb;"><tr>
+                <td>Name</td>
+
+             </tr>
+             <tr>
+                <td>
+                   <input type="text" name="name" placeholder="Your Name">
+                </td>
+
+             </tr>
+             <tr>
+                <td>Phone</td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>
+                   <input type="text" name="phone" placeholder="Enter your no">
+                </td>
+                <td></td> 
+             </tr>
+             <tr>
+                <td>Email</td>
+                <td></td>
+             </tr>
+             <tr>
+                <td>
+                   <input type="text" name="email" placeholder="Enter your Email">
+                </td>
+                <td></td>
+             </tr></table>
+        </form>
+        </div>
+        <div>
+        <form>
+            <table>
+                <tr>
+                    <td>Message</td>
+    
+                 </tr>
+                 <tr>
+                    <td>
+                       <textarea placeholder="Your Message" cols="40" rows="8"></textarea>
+                       
+                    </td>
+    
+                 </tr>
+            </table>
+        </form>
+        </div>
     </div>
-<div style="display: flex ; justify-content: center;">   
-<div style="display: flex; gap: 15px;;border: 2px solid black ;background-color: hwb(216 65% 29%); height: 300px; width: 500px; " >  
     <div>
-        <fieldset >
-        <label for= "Name"> enter Name</label>
-        </br>
-        <input type="text" id="Name" placeholder="enter name" margin: 17px;padding:2px;width: 90px; >
-        </br>
-        <label for="email"> enter email id</label>
-        </br>
-        <input type="text" id="email" placeholder="enter emial id "   margin: 17px;padding: 2px;width: 90px;>
-        </br>
-        <label for="phone"> enter phone number</label>
-        </br>
-        <input type="text" id="phone" placeholder="phone number "   margin: 17px;padding: 2px;width: 90px; >
-   
+        <button style="background-color: blue;text-align: center;color: white; border-radius: 25px;size: 35px;height: 40px; width: 180px; position: relative;left: 35%;">Get Started</button>
     </div>
-    <div>
-        <label for="textarea"> Message</label>
-        </br>
-        <textarea name="textbox" id="textarea" cols="30" rows="15" placeholder="enter message"></textarea>
-    <div>
-        <button style="margin-top: 1px;  padding: 3px;border: 2px solid black;background-color: blue;text-align: center;border-radius: 10px; height: 48px;width:fit-content;">Get started</button>
+
+</div>
+<div>
+<div style="  background-color:  lightblue; display: flex; flex-direction: row; border-radius: 10px; margin: 20px; padding: 20px; justify-content: space-around;">
+    <div style="width: 42%; padding: 10px; margin: 10px;">
+    <div style="margin-top: 10px;"><img src="https://qsumare.netlify.app/public/Osumare%20Logo-01%20(2)%204.png" alt="qsumare"></div>
+    <div style="margin-top: 10px;"> <p>The best digital marketing agency in Pune with a proven track record of consistently delivering quality service.</p></div>
+    <div style="margin-top: 10x;"> <p style="font-weight: bold;">Address</p></div>
+    <div style="margin-top: 10px;"> <p>Survey No. 43, Pathare Thube Nagar, Nagar Road, Kharadi, Pune-14, Maharastra, India.</p></div>
+    <div style="margin-top: 10px;"> <p style="font-weight: bold;">Contact Us</p></div>
+        <div style="margin-top: 10px;">
+            <img src="https://qsumare.netlify.app/public/mail-fill.png">
+            <span>hello@osumare.in</span>
+        </div>
+        <div style="margin-top:10px;">
+            <img src="https://qsumare.netlify.app/public/phone-fill.png">
+            <span>+91 8459 8762 26</span>
+        </div>
     </div>
-    </fieldset>
+    <div style="width: 16%;">
+        <div><p style="font-weight: bold; margin: 20px;padding: 20px; font-size: x-large;">Menu</p></div>
+        <div><ul style="list-style: none; margin: 20px; padding-top: 20px;padding-bottom: 50px; ">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Work</li>
+            <li>Blog</li>
+            <li>Career</li>
+        </ul></div>
+    </div>
+    <div style="width: 42%;">
+        <div><p style="font-weight: bold;  margin: 20px;padding: 20px; font-size: x-large;">Social</p></div>
+        <div style="list-style: none; margin: 20px; padding-top: 20px;padding-bottom: 50px; "><img src="https://qsumare.netlify.app/public/Icons.png"></div>
     </div>
 </div>
+<p style="text-align: center; margin-top: 15px;">© 2023 Osumare. All rights reserved.</p>%
 </div>
 </body>     
 </html>
