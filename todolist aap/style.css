@@ -1,0 +1,62 @@
+.app{
+    border: 1px solid black;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputparent{
+    display: flex;
+    border: 1px solid rgb(89, 81, 143);
+    /* box-shadow: 10px 10px 5px lightblue; */
+    height:65px ;
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.inputtext{
+    border: 1px solid black;
+    box-shadow: inset 6px 6px 1px greenyellow;
+    height:65px ;
+    width: 80%;
+    /* margin-left: 5px; */
+    /* margin-top: 2px; */
+}
+.add{
+    background-color: blue;
+    font: 40px;
+    height:65px ;
+    width: 20%;
+}
+.inputtext{
+    color: black;
+    font-size:40px;
+    text-align: center;
+
+}
+.list{
+    box-shadow: inset 6px 6px 1px green;
+    border: 1px solid black;
+    display: flex;
+    height:60px ;
+    width: 80%;
+    margin-left: 20px;
+    margin: 20px;
+}
+.listtext{
+    font: 40px;
+    height:65px ;
+    width: 80%;
+
+
+}
+
+.deletebtn{
+    background-color: red;
+    font: 40px;
+    height:65px ;
+    width: 20%;
+}
+.listdone{
+    background-color: brown;
+}
